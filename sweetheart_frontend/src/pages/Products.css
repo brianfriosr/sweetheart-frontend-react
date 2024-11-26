@@ -1,0 +1,77 @@
+/* Estilo para la sección del menú */
+.menu {
+    padding: 50px 20px;
+    background-color: #F1E7CE;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 1px solid #AA986E;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    background-color: #EFCEB9;
+    color: #585857;
+    border-radius: 5px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.order-button {
+    background-color: #AA986E;
+    border: none;
+    padding: 10px;
+    margin: 1rem;
+    color: #F1E7CE;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.order-button:hover {
+    background-color: #FFF;
+    color: #585857;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #AA986E;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #F1E7CE;
+    color: #585857;
+}
+
+.dropdown:focus {
+    outline: none;
+    border-color: #AA986E;
+}
+
+.checkout-button {
+    background-color: #AA986E;
+    border: none;
+    padding: 10px;
+    margin: 1rem;
+    color: #F1E7CE;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkout-button:hover {
+    background-color: #FFF;
+    color: #585857;
+}
+

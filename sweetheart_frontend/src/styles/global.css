@@ -1,0 +1,79 @@
+/* global.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #F6A75E; /* Fondo del header */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px; /* Altura del logo */
+    margin-right: 15px;
+}
+
+header h1 {
+    font-family: 'Catchye', Arial, sans-serif;
+    color: #FFFFFF; /* Color del título */
+    font-size: 24px;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: #FFFFFF; /* Color de los enlaces */
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #DEA297; /* Hover en enlaces */
+}
+
+/* Footer */
+footer {
+    background-color: #CFCECE;
+    color: #585857;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer a {
+    color: #F6A75E; /* Color de los enlaces en el footer */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #DEA297; /* Hover en enlaces del footer */
+}
