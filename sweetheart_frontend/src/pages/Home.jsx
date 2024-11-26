@@ -13,7 +13,7 @@ const Home = () => {
                 <div className="hero-content">
                     <h1>¡Bienvenido a Sweet Heart!</h1>
                     <p>Descubre nuestros deliciosos postres hechos con amor, ideales para cualquier ocasión.</p>
-                    <Link to="/products" className="cta-button">Ver Menú</Link>
+                    <Link to="/products" className="cta-button">Ver Catálogo</Link>
                 </div>
             </section>
 
@@ -62,7 +62,7 @@ const Home = () => {
             <section className="cta-section">
                 <h2>Haz tu pedido ahora</h2>
                 <p>Es fácil, rápido y delicioso. ¡Haz clic abajo para explorar nuestro menú y pedir tus favoritos!</p>
-                <Link to="/products" className="cta-button">Ver Menú</Link>
+                <Link to="/products" className="cta-button">Ver Catálogo</Link>
             </section>
         </div>
     );

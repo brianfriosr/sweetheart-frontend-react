@@ -20,23 +20,32 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-header .logo-container {
+.header-content {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
-header .logo {
-    height: 50px; /* Altura del logo */
-    margin-right: 15px;
+.header-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
 }
 
 header h1 {
     font-family: 'Catchye', Arial, sans-serif;
     color: #FFFFFF; /* Color del título */
     font-size: 24px;
-    margin: 0;
+    margin: 0 0 0 20px;
 }
 
 header nav ul {
@@ -55,7 +64,11 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #DEA297; /* Hover en enlaces */
+    color: #585857; /* Hover en enlaces */
+}
+
+.logo-container:hover {
+    color: #585857; /* Hover en enlaces */
 }
 
 /* Footer */

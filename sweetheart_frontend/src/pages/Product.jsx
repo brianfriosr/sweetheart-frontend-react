@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-hot-toast';
 import './Products.css';
 
 const Product = ({ product, onAddToCart }) => {
@@ -37,7 +38,8 @@ const Product = ({ product, onAddToCart }) => {
 
     const handleAddToCart = () => {
         if (selectedOption === 'default') {
-            alert('Por favor, selecciona un tamaño.');
+            toast.error('Por favor, selecciona un tamaño.');
+            //alert('Por favor, selecciona un tamaño.');
             return;
         }
         onAddToCart({
@@ -46,7 +48,8 @@ const Product = ({ product, onAddToCart }) => {
             price,
             portions,
         });
-        alert(`${product.name} ha sido agregado al carrito.`);
+        toast.success(`${product.name} ha sido agregado al pedido.`);
+        // alert(`${product.name} ha sido agregado al carrito.`);
     };
 
     return (

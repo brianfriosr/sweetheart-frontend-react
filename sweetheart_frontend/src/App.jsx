@@ -7,11 +7,15 @@ import Order from './pages/Order';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import { Toaster } from 'react-hot-toast';
 import './styles/global.css'; // Importa el archivo CSS global
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const App = () => {
     return (
         <Router>
+            <Toaster position="top-center" reverseOrder={false} />
             <Header />
             <main>
                 <Routes>

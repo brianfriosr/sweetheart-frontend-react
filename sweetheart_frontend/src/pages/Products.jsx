@@ -34,7 +34,7 @@ const Products = () => {
 
     return (
         <section className="menu">
-            <h2>Nuestro Menú</h2>
+            <h2>Nuestro catálogo de productos</h2>
             <div className="product-grid">
                 {products.map((product) => (
                     <Product key={product.id} product={product} onAddToCart={handleAddToCart} />

@@ -9,7 +9,7 @@
 
 /* Hero Section */
 .hero {
-    background: url('/assets/hero-bg.jpg') no-repeat center center/cover;
+    background: url('../assets/sweetheart_logo_10.png') no-repeat center center;
     height: 60vh;
     display: flex;
     justify-content: center;
@@ -85,8 +85,12 @@
 /* Testimonials */
 .testimonials {
     padding: 40px 20px;
-    background-color: #FFE5E0;
+    background-color: #EFCEB9;
     text-align: center;
+}
+
+.testimonials h2{
+    color: #585857;
 }
 
 .testimonial-grid {
@@ -109,7 +113,11 @@
 .cta-section {
     padding: 40px 20px;
     text-align: center;
-    background-color: #F6A75E;
+    background-color: #EFC19E;
+    color: #FFFFFF;
+}
+
+.cta-section h2 {
     color: #FFFFFF;
 }
 

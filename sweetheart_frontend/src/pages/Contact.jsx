@@ -1,12 +1,14 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-hot-toast';
 import './Contact.css';
 
 const Contact = () => {
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = (data) => {
-        alert(`¡Gracias ${data.name}! Nos pondremos en contacto contigo pronto.`);
+        toast.success(`¡Gracias ${data.name}! Nos pondremos en contacto contigo pronto.`);
+        //alert(`¡Gracias ${data.name}! Nos pondremos en contacto contigo pronto.`);
         reset();
     };
 
