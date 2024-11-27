@@ -1,13 +1,20 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-hot-toast';
+import Swal from 'sweetalert2'
 import './Contact.css';
 
 const Contact = () => {
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = (data) => {
-        toast.success(`¡Gracias ${data.name}! Nos pondremos en contacto contigo pronto.`);
+        Swal.fire({
+            title: '¡Gracias!',
+            text: `¡Gracias ${data.name}! Nos pondremos en contacto contigo pronto.`,
+            icon: 'success',
+            confirmButtonText: 'OK'
+          })
+        //toast.success(`¡Gracias ${data.name}! Nos pondremos en contacto contigo pronto.`);
         //alert(`¡Gracias ${data.name}! Nos pondremos en contacto contigo pronto.`);
         reset();
     };

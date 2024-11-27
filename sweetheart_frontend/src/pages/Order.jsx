@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import api from '../services/api';
 import { toast } from 'react-hot-toast';
+import Swal from 'sweetalert2'
 import './Order.css';
 
 const Order = () => {
@@ -36,7 +37,13 @@ const Order = () => {
             })
             .catch((error) => {
                 console.error('Error al realizar el pedido:', error.response?.data || error.message);
-                toast.error('Hubo un problema al realizar el pedido');
+                Swal.fire({
+                    title: '¡Error!',
+                    text: 'Hubo un problema al realizar el pedido',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                  })
+                //toast.error('Hubo un problema al realizar el pedido');
             });
     };
 

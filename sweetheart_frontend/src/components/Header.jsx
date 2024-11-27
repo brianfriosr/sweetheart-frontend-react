@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/sweetheart_logo_1.png';
+import logo from '../assets/LOGO_IMAGENES/LOGO-SWEET-HEART-04.png';
 
 const Header = () => {
     return (
@@ -9,7 +9,7 @@ const Header = () => {
                 {/* Logo y título como enlaces */}
                 <Link to="/" className="header-link">
                     <img src={logo} alt="Sweet Heart Logo" className="logo" />
-                    <h1>Sweet Heart Cakeshop</h1>
+                    <h1>Sweet Heart</h1>
                 </Link>
             </div>
             <nav>

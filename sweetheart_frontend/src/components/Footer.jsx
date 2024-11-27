@@ -10,7 +10,7 @@ const Footer = () => {
                     Instagram
                 </a>
                 |
-                <a href="mailto:info@sweetheart.com" target="_blank">Correo</a>
+                <a href="mailto:cakeshop.sweetheart@gmail.com" target="_blank">Correo</a>
                 |
                 <a href="https://wa.me/+573204496420" target="_blank">WhatsApp</a>
             </p>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { toast } from 'react-hot-toast';
+import Swal from 'sweetalert2'
 import './Products.css';
 
 const Product = ({ product, onAddToCart }) => {
@@ -38,7 +39,13 @@ const Product = ({ product, onAddToCart }) => {
 
     const handleAddToCart = () => {
         if (selectedOption === 'default') {
-            toast.error('Por favor, selecciona un tamaño.');
+            Swal.fire({
+                title: '¡Error!',
+                text: 'Por favor, selecciona un tamaño.',
+                icon: 'error',
+                confirmButtonText: 'OK'
+              })
+            //toast.error('Por favor, selecciona un tamaño.');
             //alert('Por favor, selecciona un tamaño.');
             return;
         }
@@ -48,7 +55,13 @@ const Product = ({ product, onAddToCart }) => {
             price,
             portions,
         });
-        toast.success(`${product.name} ha sido agregado al pedido.`);
+        Swal.fire({
+            title: '¡Excelente!',
+            text: `${product.name} ha sido agregado al pedido.`,
+            icon: 'success',
+            confirmButtonText: 'OK'
+          })
+        // toast.success(`${product.name} ha sido agregado al pedido.`);
         // alert(`${product.name} ha sido agregado al carrito.`);
     };
 

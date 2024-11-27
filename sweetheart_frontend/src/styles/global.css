@@ -44,7 +44,7 @@ header {
 header h1 {
     font-family: 'Catchye', Arial, sans-serif;
     color: #FFFFFF; /* Color del título */
-    font-size: 24px;
+    font-size: 30px;
     margin: 0 0 0 20px;
 }
 
@@ -59,7 +59,7 @@ header nav ul {
 header nav ul li a {
     color: #FFFFFF; /* Color de los enlaces */
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
 }
 
